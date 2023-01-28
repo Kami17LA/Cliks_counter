@@ -11,6 +11,10 @@ function App() {
           alt="freecodecamp logo"
         />
       </div>
+
+      <div className='principal-container'>
+        
+      </div>
     </div>
   );
 }
