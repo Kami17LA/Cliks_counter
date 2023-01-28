@@ -1,5 +1,6 @@
 import './App.css';
-import freeCodeCampLogo from './images/freecodecamp-logo.jpg'
+import freeCodeCampLogo from './images/freecodecamp-logo.jpg';
+import Botton from './components/Button'
 
 function App() {
   return (
@@ -13,7 +14,16 @@ function App() {
       </div>
 
       <div className='principal-container'>
-        
+        <Botton
+          text="Click"
+          isClickBotton={true}
+          /* manageClick={} */
+        />
+        <Botton
+          text="Restart"
+          isClickBotton={false}
+          /* manageClick={} */
+        />
       </div>
     </div>
   );
