@@ -1,4 +1,5 @@
 import React from "react";
+import './Botton.css'
 
 function Button({ text, isClickBotton, manageClick }) { /* desestruccturación */ /* operador ternario */
   return (
