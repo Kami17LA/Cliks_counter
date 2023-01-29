@@ -2,16 +2,24 @@ import './App.css';
 import freeCodeCampLogo from './images/freecodecamp-logo.jpg';
 import Botton from './components/Botton/Botton'
 import CounterFunction from './components/Counter/Counter';
+import { useState } from 'react';
 
 
 function App() {
 
+  const [numberClick, setNumberClick] = useState(0);
+
+
   const manageClick = () => {
-    console.log("Click");
+    setNumberClick(numberClick + 1);
   }
 
+  /* const manageDismiss = () => {
+    setNumberClick(numberClick - 1);
+  } */
+
   const resetCounter = () => {
-    console.log("Restart")
+    setNumberClick(0);
   }
 
   return (
@@ -26,13 +34,18 @@ function App() {
 
       <div className='principal-container'>
         <CounterFunction
-          numberCliks='5'
+          numberClick={numberClick}
         />
         <Botton
           text="Click"
           isClickBotton={true}
           manageClick={ manageClick }
         />
+        {/* <Botton
+          text="Dismiss"
+          isClickBotton={true}
+          manageClick={ manageDismiss }
+        /> */}
         <Botton
           text="Restart"
           isClickBotton={false}

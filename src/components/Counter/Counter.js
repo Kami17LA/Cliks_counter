@@ -1,10 +1,10 @@
 import React from "react";
 import './Counter.css'
 
-function CounterFunction ({ numberCliks }) {
+function CounterFunction ({ numberClick }) {
   return (
     <div className="counter">
-      {numberCliks}
+      {numberClick}
     </div>
   )
 }
